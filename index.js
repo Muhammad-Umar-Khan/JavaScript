@@ -44,3 +44,30 @@ let appliedToAll = 2;
 let ageNow = 12 * appliedToAll + 5;
 
 console.log(ageNow);
+
+//JavaScript Variables;
+
+console.log(carName);
+var carName = "Ford";
+
+let sum = 0;
+
+sum+=9;
+
+console.log(sum);
+
+const num1 = 6;
+const num2 = 6;
+
+function findSum(){
+    const num1 = 9;
+    const num2 = 7;
+    return num1+num2+" sum upto "+num1+num2;
+}
+
+function findSum2(){
+    return num1+num2;
+}
+
+console.log(findSum());
+console.log(findSum2());
