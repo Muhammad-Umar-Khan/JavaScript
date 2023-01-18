@@ -52,22 +52,44 @@ var carName = "Ford";
 
 let sum = 0;
 
-sum+=9;
+sum += 9;
 
 console.log(sum);
 
 const num1 = 6;
 const num2 = 6;
 
-function findSum(){
-    const num1 = 9;
-    const num2 = 7;
-    return num1+num2+" sum upto "+num1+num2;
+function findSum() {
+  const num1 = 9;
+  const num2 = 7;
+  return num1 + num2 + " sum upto " + num1 + num2;
 }
 
-function findSum2(){
-    return num1+num2;
+function findSum2() {
+    if (true){
+        var country = "Pakistan";
+    }
+    console.log(country)
+  return num1 + num2;
 }
 
 console.log(findSum());
 console.log(findSum2());
+
+let cars = ["Saab", "Volvo", "BMW", "Mwrcedes", "Bently"];
+let cars2 = ["Toyota", "Honda", "alto"];
+console.log([...cars, ...cars2]);
+
+//JavaScript objects;
+
+const object1 = {
+  userName: "Umar",
+  phone: +923162058631,
+  address: "21 st, westwood verginia",
+};
+
+console.log("User Name", object1.userName);
+
+for(let key in object1){
+    console.log(object1[key]);
+}
