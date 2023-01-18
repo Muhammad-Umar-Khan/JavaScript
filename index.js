@@ -66,10 +66,10 @@ function findSum() {
 }
 
 function findSum2() {
-    if (true){
-        var country = "Pakistan";
-    }
-    console.log(country)
+  if (true) {
+    var country = "Pakistan";
+  }
+  console.log(country);
   return num1 + num2;
 }
 
@@ -81,6 +81,7 @@ let cars2 = ["Toyota", "Honda", "alto"];
 console.log([...cars, ...cars2]);
 
 //JavaScript objects;
+console.log("****JavaScript Objects****")
 
 const object1 = {
   userName: "Umar",
@@ -90,6 +91,30 @@ const object1 = {
 
 console.log("User Name", object1.userName);
 
-for(let key in object1){
-    console.log(object1[key]);
+for (let key in object1) {
+  console.log(object1[key]);
 }
+
+//Strings in JavaScript;
+console.log("****JavaScript Strings****")
+
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+console.log("value at index 0", text[0]);
+
+let sentence = "My name is Umar";
+console.log(text.toLowerCase());
+
+console.log("trimed sentence", sentence.slice(5))
+
+let strToArray = sentence.split(" ");
+console.log("Character code at", text.charCodeAt(25)-96);
+console.log(strToArray);
+
+console.log(text.length);
+
+let intro = "My name is facebook";
+
+let newIntro = intro.replace("facebook", "Umar");
+
+console.log(newIntro);
