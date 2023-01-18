@@ -36,3 +36,11 @@ b = 6;
 c = a + b;
 
 console.log(c);
+
+//JavaScript Expressions;
+
+let appliedToAll = 2;
+
+let ageNow = 12 * appliedToAll + 5;
+
+console.log(ageNow);
