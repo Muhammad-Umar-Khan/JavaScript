@@ -59,16 +59,15 @@ console.log(sum);
 const num1 = 6;
 const num2 = 6;
 
-let findSum = function() {
+let findSum = function () {
   const num1 = 9;
   const num2 = 7;
   return num1 + num2 + " sum upto " + num1 + num2;
-}
+};
 
-console.log("type of function is", typeof(findSum));
-console.log("type of null is", typeof(null));
+console.log("type of function is", typeof findSum);
+console.log("type of null is", typeof null);
 console.log("result of null === null", null === null);
-
 
 function findSum2() {
   if (true) {
@@ -86,15 +85,15 @@ let cars2 = ["Toyota", "Honda", "alto"];
 console.log([...cars, ...cars2]);
 
 //JavaScript objects;
-console.log("****JavaScript Objects****")
+console.log("****JavaScript Objects****");
 
 const object1 = {
   userName: "Umar",
   phone: +923162058631,
   address: "21 st, westwood verginia",
-  sayName: function(){
+  sayName: function () {
     return `My name is ${this.userName} and i live at ${this.address}`;
-  }
+  },
 };
 
 console.log("Name and address:", object1.sayName());
@@ -104,7 +103,7 @@ for (let key in object1) {
 }
 
 //Strings in JavaScript;
-console.log("****JavaScript Strings****")
+console.log("****JavaScript Strings****");
 
 let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -113,10 +112,10 @@ console.log("value at index 0", text[0]);
 let sentence = "My name is Umar";
 console.log(text.toLowerCase());
 
-console.log("trimed sentence", sentence.slice(5))
+console.log("trimed sentence", sentence.slice(5));
 
 let strToArray = sentence.split(" ");
-console.log("Character code at", text.charCodeAt(25)-96);
+console.log("Character code at", text.charCodeAt(25) - 96);
 console.log(strToArray);
 
 console.log(text.length);
@@ -135,15 +134,15 @@ console.log("****JavaScript Numbers****");
 
 let numStr = "2345";
 
-console.log(typeof(numStr));
-console.log(typeof(Number(numStr)));
+console.log(typeof numStr);
+console.log(typeof Number(numStr));
 
 //javaScript Arrays;
 console.log("****JavaScript Arrays****");
 
 const firstArray = ["ford", "BMW", "Mercedes", "Bently"];
 
-console.log(typeof(firstArray));
+console.log(typeof firstArray);
 console.log(firstArray);
 
 //JavaScript Array methods;
@@ -152,4 +151,10 @@ console.log("****JavaScript Array methods****");
 let fruits = ["Apple", "Banana", "Pomegrenate", "Grapes"];
 
 let arrToString = fruits.toString();
-console.log("This is the strigified form of fruits array: ",arrToString);
+console.log("This is the strigified form of fruits array: ", arrToString);
+
+const fruits1 = [3, 4, 5, 6, 1, 9, 8, 11];
+let fruits1Sorted = fruits1.sort(function (a, b) {
+  return a - b;
+});
+console.log("Fruits1 array sorted", fruits1Sorted);
