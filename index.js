@@ -140,6 +140,29 @@ console.log(typeof Number(numStr));
 //javaScript Arrays;
 console.log("****JavaScript Arrays****");
 
+let ArrayOfObjects = [
+  {
+    "color": "purple",
+    "type": "minivan",
+    "registration": new Date('2017-01-03'),
+    "capacity": 7
+  },
+  {
+    "color": "red",
+    "type": "station wagon",
+    "registration": new Date('2018-03-03'),
+    "capacity": 5
+  },
+  {
+    "color": "green",
+    "type": "school bus",
+    "registration": new Date('2019-03-03'),
+    "capacity": 35
+  },
+]
+
+ArrayOfObjects.forEach((car) => console.log(car.type));
+
 const firstArray = ["ford", "BMW", "Mercedes", "Bently"];
 
 console.log(typeof firstArray);
@@ -183,5 +206,25 @@ console.log("All over 18 by every method: ", allOver18);
 //Working with dates in JavaScript;
 console.log("****Working with dates in JavaScript");
 
-const d = new Date(year, month, day);
-console.log(d);
+const d = new Date();
+console.log(d.getDay(), d.getMonth(), d.getFullYear());
+
+//Math object in JavaScript;
+console.log("****JavaScript Math object****");
+
+const random = Math.random();
+console.log(random);
+
+//Math comparison;
+console.log("****Math comparison operator****");
+const age = 19;
+let result = age >= 18 ? "Allowed to vote" : "Not old enough";
+console.log(result);
+
+//JavaScript comparisons;
+console.log("****JavaScript comparisons****")
+
+let userName = "Umar";
+let nullText = null;
+
+console.log(nullText ?? userName);
