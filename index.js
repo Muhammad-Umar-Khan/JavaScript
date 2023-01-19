@@ -142,26 +142,26 @@ console.log("****JavaScript Arrays****");
 
 let ArrayOfObjects = [
   {
-    "color": "purple",
-    "type": "minivan",
-    "registration": new Date('2017-01-03'),
-    "capacity": 7
+    color: "purple",
+    type: "minivan",
+    registration: new Date("2017-01-03"),
+    capacity: 7,
   },
   {
-    "color": "red",
-    "type": "station wagon",
-    "registration": new Date('2018-03-03'),
-    "capacity": 5
+    color: "red",
+    type: "station wagon",
+    registration: new Date("2018-03-03"),
+    capacity: 5,
   },
   {
-    "color": "green",
-    "type": "school bus",
-    "registration": new Date('2019-03-03'),
-    "capacity": 35
+    color: "green",
+    type: "school bus",
+    registration: new Date("2019-03-03"),
+    capacity: 35,
   },
-]
+];
 
-ArrayOfObjects.forEach((car) => console.log(car.type));
+ArrayOfObjects.forEach((car) => console.log(car?.registration));
 
 const firstArray = ["ford", "BMW", "Mercedes", "Bently"];
 
@@ -222,9 +222,50 @@ let result = age >= 18 ? "Allowed to vote" : "Not old enough";
 console.log(result);
 
 //JavaScript comparisons;
-console.log("****JavaScript comparisons****")
+console.log("****JavaScript comparisons****");
 
 let userName = "Umar";
 let nullText = null;
 
 console.log(nullText ?? userName);
+
+//Switch statement in JavaScript;
+console.log("****Switch statement in JavaScript****");
+
+let day;
+let val = 10;
+switch (val) {
+  case 5:
+    day = "value >= 5";
+    break;
+  case 10:
+    day = "value >= 10";
+    break;
+  case 15:
+    day = "value >=15";
+    break;
+  case 20:
+    day = "value >=20";
+    break;
+  case 25:
+    day = "value >=25";
+    break;
+  case 30:
+    day = "value >=30";
+    break;
+  case 35:
+    day = "value >=35";
+    break;
+}
+
+console.log("Today is " + day);
+
+//JavaScript sets;
+console.log("****JavaScript sets****");
+
+let removeDuplicates = [2,3,4,5,6,7,3,4];
+
+console.log(removeDuplicates);
+
+const alphabets = new Set(removeDuplicates);
+console.log(alphabets);
