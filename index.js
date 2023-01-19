@@ -158,3 +158,30 @@ let fruits1Sorted = fruits1.sort(function (a, b) {
   return a - b;
 });
 console.log("Fruits1 array sorted", fruits1Sorted);
+
+//Array iterations;
+console.log("****Array iteration method****");
+
+// let numbers = [45, 4, 9, 16, 25];
+
+// let newNumbers = numbers.map((value) => value*2);
+
+// console.log(newNumbers);
+
+// let filtered = numbers.filter((value, index, array) => value >= 18);
+// console.log(filtered);
+
+const numbers = [45, 4, 9, 16, 25];
+let allOver18 = numbers.every(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+console.log("All over 18 by every method: ", allOver18);
+
+//Working with dates in JavaScript;
+console.log("****Working with dates in JavaScript");
+
+const d = new Date(year, month, day);
+console.log(d);
