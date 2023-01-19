@@ -92,9 +92,12 @@ const object1 = {
   userName: "Umar",
   phone: +923162058631,
   address: "21 st, westwood verginia",
+  sayName: function(){
+    return `My name is ${this.userName} and i live at ${this.address}`;
+  }
 };
 
-console.log("User Name", object1.userName);
+console.log("Name and address:", object1.sayName());
 
 for (let key in object1) {
   console.log(object1[key]);
@@ -142,3 +145,11 @@ const firstArray = ["ford", "BMW", "Mercedes", "Bently"];
 
 console.log(typeof(firstArray));
 console.log(firstArray);
+
+//JavaScript Array methods;
+console.log("****JavaScript Array methods****");
+
+let fruits = ["Apple", "Banana", "Pomegrenate", "Grapes"];
+
+let arrToString = fruits.toString();
+console.log("This is the strigified form of fruits array: ",arrToString);
