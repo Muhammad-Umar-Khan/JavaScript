@@ -59,11 +59,16 @@ console.log(sum);
 const num1 = 6;
 const num2 = 6;
 
-function findSum() {
+let findSum = function() {
   const num1 = 9;
   const num2 = 7;
   return num1 + num2 + " sum upto " + num1 + num2;
 }
+
+console.log("type of function is", typeof(findSum));
+console.log("type of null is", typeof(null));
+console.log("result of null === null", null === null);
+
 
 function findSum2() {
   if (true) {
@@ -115,6 +120,25 @@ console.log(text.length);
 
 let intro = "My name is facebook";
 
-let newIntro = intro.replace("facebook", "Umar");
+// let newIntro = intro.replace("facebook", "Umar");
 
-console.log(newIntro);
+// console.log(newIntro);
+
+console.log("index of name is ", intro.indexOf("name"));
+console.log("sentence starts with My?", intro.startsWith("My"));
+
+//JavaScript numbers;
+console.log("****JavaScript Numbers****");
+
+let numStr = "2345";
+
+console.log(typeof(numStr));
+console.log(typeof(Number(numStr)));
+
+//javaScript Arrays;
+console.log("****JavaScript Arrays****");
+
+const firstArray = ["ford", "BMW", "Mercedes", "Bently"];
+
+console.log(typeof(firstArray));
+console.log(firstArray);
