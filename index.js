@@ -263,9 +263,30 @@ console.log("Today is " + day);
 //JavaScript sets;
 console.log("****JavaScript sets****");
 
-let removeDuplicates = [2,3,4,5,6,7,3,4];
-
-console.log(removeDuplicates);
+let removeDuplicates = [2, 3, 4, 5, 6, 7, 3, 4];
 
 const alphabets = new Set(removeDuplicates);
-console.log(alphabets);
+alphabets.forEach((letter) => console.log(letter));
+
+//JavaScript Maps;
+console.log("****Maps in JavaScript****");
+const fruitsMap = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+// fruitsMap.set("apples", 500);
+// fruitsMap.set("bananas", 300);
+// fruitsMap.set("oranges", 200);
+fruitsMap.set("watermelon", 100);
+const oranges = fruitsMap.get("oranges");
+console.log(oranges);
+
+console.log(fruitsMap);
+
+fruitsMap.forEach((fruit) => console.log(fruit));
+
+let textToBeSearchedForRegex = "Visit W3School for more details and my name is Umar";
+let indexOfw3School = textToBeSearchedForRegex.search(/umar/i);
+console.log(indexOfw3School);
